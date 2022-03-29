@@ -25,3 +25,13 @@ function closeScreen() {
     var screen = document.querySelector(".frontScreen")
     screen.style.display = 'none';
 }
+
+function showScreen() {
+    var screen = document.querySelector(".frontScreen")
+    if(screen.style.display === 'none') {
+        screen.style.display = 'block';
+    }
+    else {
+        screen.style.display = 'none';
+    }
+}

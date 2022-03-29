@@ -11,6 +11,10 @@
     background-color: rgba(200, 200, 200, 0.5);
 }
 
+.navItem {
+    cursor: pointer;
+}
+
 .frontScreen {
     width: 20%;
     height: 80vh;
