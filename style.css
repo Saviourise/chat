@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.backScreen {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.frontScreen {
+    width: 20%;
+    height: 80vh;
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    transform: translate(-50%, 0);
+    background-color: #252525;
+    /* background: url('./lgjbui.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-radius: 30px;
+}
+
+.bodyHeader {
+    background-color: #252525;
+    width: 100%;
+    height: 10%;
+    color: rgba(200, 200, 200, 0.5);
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.i1 {
+    font-size: 25px;
+}
+
+.logo {
+    flex: 60%;
+}
+
+.nav {
+    flex: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.chatHeader {
+    width: 100%;
+    background: linear-gradient(to right, #780183 60%, #ad20a6);
+    height: 12%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 0px 40px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar {
+    flex: 90%;
+}
+
+.cancel {
+    flex: 10%;
+    color: rgba(200, 200, 200, 1);
+    font-size: 20px;
+}
+
+.chatArea {
+    width: 100%;
+    height: 76%;
+    background-color: #252525;
+    position: relative;
+    background-attachment: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #252525;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #780183;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.chat-l {
+    display: flex;
+}
+
+.chat-r {
+    display: flex;
+}
+
+.sp-r {
+    flex: 1;
+}
+
+.mess {
+    max-width: 300px;
+    background-color: #780183;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.mass-p {
+    word-break: break-all;
+    font-size: 15px;
+}
+
+.mess-r {
+    background-color: #ad20a6;
+}
+
+.inputArea {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 80%;
+    height: 15px;
+    padding: 15px 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.i2 {
+    color:#780183;
+    padding: 0px 10px;
+    position: absolute;
+    left: 75%;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+    z-index: 100000;
+}
+
+@media only screen and (max-width: 1000px){
+	.backScreen {
+        display: none;
+    }
+    .frontScreen {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        border-radius: 0px;
+        left: 50%;
+    }
+    .chatHeader {
+        border-radius: 0px;
+    }
+}

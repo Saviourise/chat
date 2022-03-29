@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="backScreen">
+        <header class="bodyHeader">
+            <p class="logo">
+                LOGO
+            </p>
+            <nav class="nav">
+                <p class="navItem">Home</p>
+                <p class="navItem">Menu</p>
+                <p class="navItem">Chat</p>
+            </nav>
+        </header>
+        
+    </div>
+    <div class="frontScreen">
+        <header class="chatHeader">
+            <p class="avatar">
+                <i class="fas fa-user-circle i1"></i>
+            </p>
+            <p class="cancel">
+                <i class="fas fa-times" onclick="closeScreen()"></i>
+            </p>
+        </header>
+
+        <div class="chatArea">
+            <div class="chat-r">
+                <div class="sp-r">
+
+                </div>
+                <div class="mess mess-r">
+                    <p class="mess-p">Hey</p>
+                </div>
+            </div>
+            
+            <div class="chat-l">
+                <div class="mess mess-l">
+                    <p class="mess-p">Hi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inputArea">
+            <input placeholder="Message" class="input" />
+            <i class="fas fa-paper-plane i2" onclick="send()"></i>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
